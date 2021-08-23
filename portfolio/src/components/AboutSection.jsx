@@ -6,26 +6,26 @@ import styled from "styled-components";
 export default function AboutSection() {
     return (
         <About>
-            <div className="description">
+            <Description>
                 <div className="title">
-                    <div className="hide">
+                    <Hide>
                         <h2>We work to make</h2>
-                    </div>
-                    <div className="hide">
+                    </Hide>
+                    <Hide>
                         <h2>
                             your <span>dreams</span>come
                         </h2>
-                    </div>
-                    <div className="hide">
+                    </Hide>
+                    <Hide>
                         <h2>true.</h2>
-                    </div>
+                    </Hide>
                 </div>
                 <p>Constact us for any photography or videography ideas taht you have. We have professionals with amazing skills</p>
                 <button>Contact us</button>
-            </div>
-            <div className="image">
+            </Description>
+            <Image>
                 <img src={home1} alt="man with camera" />
-            </div>
+            </Image>
         </About>
     )
 }
@@ -38,5 +38,33 @@ const About = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 5rem 10rem;
-    color: aqua;
-`
+    color: white;
+`;
+const Description = styled.div`
+    flex: 1;
+    padding-right: 5rem;
+    h2 {
+        font-weight: lighter;
+    }
+   
+`;
+const Image = styled.div`
+    flex: 1;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+    }
+   
+   
+`;
+
+const Hide = styled.div`
+    overflow: hidden;
+   
+   
+`;
+
+
+
