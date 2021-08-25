@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
             }
 
             body {
+                font-family: "Inter", sans-serif;
                 background: #1b1b1b
             }
             button {
@@ -19,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
                 background:transparent;
                 color: white;
                 transition: all 0.5s ease;
+                font-family: "Inter", sans-serif;
                 &:hover{
                     background-color: #23d997;
                     color: white;
@@ -28,6 +30,7 @@ const GlobalStyle = createGlobalStyle`
             h2 {
                 font-weight: lighter;
                 font-size: 4rem;
+                font-family: "Inter", sans-serif;
                 }
             h3 {
                 color: white;
@@ -49,5 +52,8 @@ const GlobalStyle = createGlobalStyle`
                 font-size: 1.4rem;
                 line-height: 150%;
                 }
+            span {
+                font-family: "Inter", sans-serif;
+            }
 `
 export default GlobalStyle;
